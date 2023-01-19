@@ -1,0 +1,108 @@
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Cream: hsl(30, 38%, 92%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Darl-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Fraunces: 'Fraunces', serif;
+    --Montserrat: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--Cream);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 3%;
+    overflow: hidden;
+    width: 90%;
+    height: 90vh;
+    margin-top: 8%;
+}
+.main-container .main-img-container{
+    width: 100%;
+    height: 40%;
+}
+.main-container .main-img-container img{
+    max-height: 100%;
+    width: 100%;
+}
+
+/*section2 - item2 del main*/
+
+.main-container .main-section{
+    width: 100%;
+    height: 60%;
+    /*padding-left: 20px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    padding: 5%;
+}
+.main-section-item1{
+    font-family: var(--Montserrat);
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: var(--Darl-grayish-blue);
+}
+.main-section-item2{
+    font-family: var(--Fraunces);
+    font-size: 3rem;
+}
+.main-section-item3{
+    font-family: var(--Montserrat);
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: var(--Darl-grayish-blue);
+}
+.main-section-item4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-section-item4 div{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    width: 90%;
+    margin-right: 20px;
+}
+.main-section-item4 div .first-element{
+    font-size: 3rem;
+    font-family: var(--Fraunces);
+    color: var(--Dark-cyan);
+}
+.main-section-item4 div .second-element{
+    font-size: 1.7rem;
+    font-family: var(--Montserrat);
+}
+.main-section-item4 button{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-family: var(--Montserrat);
+    margin-bottom: 20px;
+}
