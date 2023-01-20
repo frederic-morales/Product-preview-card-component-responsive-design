@@ -23,7 +23,6 @@ body{
 main{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -56,23 +55,29 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    padding: 5%;
+    padding: 4% 7% 4% 7%;
 }
 .main-section-item1{
     font-family: var(--Montserrat);
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color: var(--Darl-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 .main-section-item2{
     font-family: var(--Fraunces);
     font-size: 3rem;
+    line-height: 1;
 }
 .main-section-item3{
     font-family: var(--Montserrat);
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: var(--Darl-grayish-blue);
+    text-align: left;
+    word-spacing: -2px;
+    line-height: 1.6;
 }
 .main-section-item4{
     display: flex;
@@ -92,8 +97,11 @@ main{
     color: var(--Dark-cyan);
 }
 .main-section-item4 div .second-element{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-family: var(--Montserrat);
+    text-decoration: line-through;
+    color: var(--Darl-grayish-blue);
+    padding: 10px 0 0 15px;
 }
 .main-section-item4 button{
     width: 100%;
@@ -105,4 +113,13 @@ main{
     color: var(--White);
     font-family: var(--Montserrat);
     margin-bottom: 20px;
+}
+
+/*Styles for Desktop*/
+
+@media (min-width: 700px) {
+    .main-container{
+        flex-direction: row;
+    }
+
 }
