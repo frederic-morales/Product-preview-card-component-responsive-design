@@ -33,16 +33,22 @@ main{
     border-radius: 3%;
     overflow: hidden;
     width: 90%;
-    height: 90vh;
+    max-width: 375px;
+    min-height: 625px;
     margin-top: 8%;
+    margin-bottom: 8%;
+
 }
 .main-container .main-img-container{
     width: 100%;
     height: 40%;
 }
-.main-container .main-img-container img{
+.main-container .main-img-container .mobile-image{
     max-height: 100%;
     width: 100%;
+}
+.main-container .main-img-container .desktop-image{
+    display: none;
 }
 
 /*section2 - item2 del main*/
@@ -96,6 +102,9 @@ main{
     font-family: var(--Fraunces);
     color: var(--Dark-cyan);
 }
+.main-section-item4 div .first-element:hover{
+    color: var(--Very-dark-blue);
+}
 .main-section-item4 div .second-element{
     font-size: 1.3rem;
     font-family: var(--Montserrat);
@@ -108,18 +117,48 @@ main{
     border: none;
     padding: 15px;
     border-radius: 10px;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     background-color: var(--Dark-cyan);
     color: var(--White);
     font-family: var(--Montserrat);
     margin-bottom: 20px;
 }
+.main-section-item4 button:hover{
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+}
 
 /*Styles for Desktop*/
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
     .main-container{
         flex-direction: row;
+        min-width: 500px;
+        max-width: 600px;
+        min-height: 450px;
+        margin-top: 11%;
     }
-
+    .main-container .main-img-container{
+        width: 50%;
+        height: 100%;
+    }
+    .main-container .main-img-container .mobile-image{
+        display: none;
+    }
+    .main-container .main-img-container .desktop-image{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .main-container .main-section{
+        width: 50%;
+        height: 100%;
+        padding: 6% 5% 2% 5%;
+    }
+    .main-section-item2{
+        padding-right: 20px;
+    }
+    .main-section-item3{
+        padding-right: 20px;
+    }
 }
